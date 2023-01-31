@@ -1,0 +1,162 @@
+@media screen and (max-width: 991.9px) {
+
+
+    // header navbar    
+    .header__nav {
+        .navbar-nav {
+            // align-items: none !important;
+            margin-top: $margin-1;
+
+            li {
+                a {
+                    border: none;
+                }
+            }
+
+            .nav-item {
+                .discover-menu {
+                    width: none;
+                }
+
+
+
+
+            }
+
+            .nav-item.dropdown {
+                position: relative;
+
+                .discover-menu {
+                    position: absolute;
+                    left: 25%;
+                    top: -150%;
+                }
+            }
+        }
+
+        &>a {
+            padding: $padding-2 $padding-3;
+            font-size: $font-size-1;
+            border: none;
+        }
+
+        &>a:first-child {
+            padding: 0 $padding-2;
+        }
+
+        button {
+            margin-right: $margin-2;
+        }
+    }
+
+    .navbar-collapse {
+        border-top: $border-color-1 ;
+    }
+
+    //search
+    #search-area {
+        background-color: $color-blue-100;
+        padding: $padding-1 $padding-2;
+
+        i {
+            color: $color-white;
+            font-size: $font-size-1;
+        }
+
+        &::before {
+            display: none;
+        }
+
+        input {
+            font-size: $font-size-1;
+            width: 80%;
+            height: 2rem;
+            margin-right: $margin-1;
+            color: $color-white;
+            border: 1px solid $color-white;
+            border-radius: 10px;
+            padding: $padding-1 ;
+            padding-left: $padding-1;
+            padding-right: $padding-4;
+
+            &::placeholder {
+                font-size: $font-size-1;
+                color: $color-white;
+            }
+        }
+
+        .btn-search {
+            font-size: $font-size-1;
+            padding: 0 $padding-2;
+            @include buttonVehicle($color-white, transparent, $color-white, $color-white, $color-blue-100)
+        }
+    }
+
+    // discover-menu
+    .discover-menu {
+        &::before {
+            @include arrow(unset, 3%);
+            top: 4.5rem;
+        }
+    }
+
+
+    //vehicle-title
+    .vehicles {
+        .container--config {
+            padding: 0 $padding-7 + 8%;
+        }
+
+        // .list-vehicles .vehicle-title h3
+        .vehicles-content {
+            .vehicle__nav {
+                ul {
+                    padding-left: 0;
+
+                    li {
+                        a {
+                            padding: $padding-2;
+                            font-size: $font-size-1 - .1;
+                        }
+                    }
+                }
+            }
+
+            .list-vehicles {
+                padding: $padding-2;
+
+                .vehicle-title h3 {
+                    font-size: 2rem;
+                    top: -2.5rem;
+                }
+
+                .vehicle-product {
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+
+                    .vehicle-info {
+
+
+                        h4 {
+                            font-size: 1.7rem;
+                        }
+                    }
+
+                    .vehicle-btn {
+                        margin-top: $margin-1;
+
+                        .btn {
+                            margin-bottom: $margin-1;
+                            padding: $padding-1 $padding-2 - 5;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,103 @@
+// var
+@import './helpers/variable';
+@import './base/reset';
+@import './base/normalize';
+
+//mixin;
+@import './helpers/mixin';
+@import './helpers/function';
+
+//layout 
+// --header
+@import './layout/header/header';
+@import './layout/header/header-vehicles';
+@import './layout/header/verhicle-close';
+@import './layout/header/dropdown-menu.scss';
+//loader 
+;
+
+// --carousel
+@import './layout/carousel/carousel';
+// --intro
+@import './layout/intro/intro';
+// our-vehicle
+@import './layout/our-vehicle/our-vehicle';
+@import './layout/our-vehicle/vehicle-function';
+@import './layout/our-vehicle/intro-1';
+@import './layout/our-vehicle/discover-vehicle';
+//footer
+@import './layout/footer/footer-content';
+
+// shooping tools
+@import './layout/shooping-tools/shopping-tools';
+@import './layout/shooping-tools/item-shopping-tools';
+
+// component
+@import './components/button';
+@import './components/search-input';
+@import './components/title';
+@import './components/section';
+
+//responsive
+// ---header
+@import './responsive/header/lg-screen';
+@import './responsive/header/md-sceen';
+@import './responsive/header/sm-screen';
+@import './responsive/header/xs-screen';
+@import './responsive/header/s20-ultra';
+// --carousel
+@import './responsive/carousel/md-screen';
+@import './responsive/carousel/sm-screen';
+@import './responsive/carousel/xs-screen';
+// --intro
+@import './responsive/intro/xl-screen';
+@import './responsive/intro/lg-sceen';
+@import './responsive/intro/md-sceen';
+@import './responsive/intro/sm-sceen';
+@import './responsive/intro/xs-screen';
+
+// --our-vehicle
+@import './responsive/our-vehicle/lg-sceen';
+@import './responsive/our-vehicle/md-screen';
+@import './responsive/our-vehicle/sm-screen';
+@import './responsive/our-vehicle/sx-sceen';
+@import './responsive/our-vehicle/s20-ultra-screen';
+
+// --discover
+@import './responsive/discover/lg-screen';
+@import './responsive/discover/md-screen';
+@import './responsive/discover/sm-screen';
+@import './responsive/discover/xs-screen';
+
+
+// --seacrh footer
+@import './responsive/search-footer/lg-screen';
+@import './responsive/search-footer/md-screen';
+@import './responsive/search-footer/sm-screen';
+@import './responsive/search-footer/xs-screen';
+
+
+// footer 
+@import './responsive/footer/lg-screen';
+@import './responsive/footer/md-screen';
+@import './responsive/footer/sm-screen';
+@import './responsive/footer/xs-screen';
+
+@import './layout/loader/loader';
+
+
+
+
+// trang honda vehicle
+// component header title society
+@import '../pages/hondaSafety/css/main-component/header-title-society';
+@import '../pages/hondaSafety/css/main-component/align-center.scss';
+@import '../pages/hondaSafety/css/component/cherish/cherish';
+@import '../pages/hondaSafety/css/component/collision/colliion';
+
+// banner
+@import '../pages/hondaSafety/css/component/banner/banner';
+// safety-everyone
+@import '../pages/hondaSafety/css/component/safety-everyone/safety-everyone.scss';
+// society
+@import '../pages/hondaSafety/css/component/society/society';

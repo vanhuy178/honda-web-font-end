@@ -1,0 +1,27 @@
+@media screen and (max-width: 1400px) {
+    .search-footer {
+
+        #search-area {
+            #search-footer {
+                width: 85%;
+            }
+
+            p {
+                font-size: $font-size-1 - .3;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .search-footer {
+        #search-area {
+            #search-footer {
+                input {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

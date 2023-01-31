@@ -1,0 +1,61 @@
+@media screen and (max-width: 412px) {
+    .our-vehicle {
+        #our-vehicle-slider {
+            .carousel-indicators--config {
+                margin-bottom: $ultra-mg-2;
+
+                li {
+                    font-size: $ultra-fz-1;
+
+                }
+
+                li.active {
+                    padding: $ultra-pd-2 $ultra-pd-3;
+
+                    &::before {
+                        content: '';
+                        border-top: 10px solid white;
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        top: 30px;
+                    }
+                }
+            }
+        }
+
+        .carousel-xs-indicators {
+            i {
+                margin-right: $margin-1 + 5;
+            }
+        }
+
+        .carousel-caption--config {
+            & p:first-child {
+                font-size: $font-size-1 - .4;
+            }
+
+
+
+            .carousel-caption-detail {
+                margin: $ultra-pd-5 0;
+
+                h2 {
+                    font-size: $font-size-2;
+                }
+
+                p {
+                    font-size: $font-size-1 - .8;
+                }
+
+            }
+
+            .carousel-caption-footer {
+                padding-top: 5px;
+
+                & a {
+                    font-size: $font-size-1 - .7;
+                }
+            }
+        }
+    }
+}

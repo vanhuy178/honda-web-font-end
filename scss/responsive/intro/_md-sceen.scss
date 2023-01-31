@@ -1,0 +1,16 @@
+@media screen and (max-width: 991.98px) {
+    .intro {
+        .intro-content {
+            padding: 0 $padding-9;
+
+            .intro-left,
+            .intro-right {
+                margin-bottom: $margin-2;
+            }
+
+            .intro-right {
+                background-image: url('../../../images/our-vehicles-intro-2.jpg');
+            }
+        }
+    }
+}

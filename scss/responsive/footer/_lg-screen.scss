@@ -1,0 +1,31 @@
+@media screen and (max-width: 1200px) {
+    .copyright {
+        .copyright-left {
+
+            font-size: $font-size-1 - .2;
+        }
+
+        .copyright-right {
+
+            ul {
+                justify-content: flex-end;
+
+                li {
+                    padding: 0 $padding-1;
+
+                    a {
+                        font-size: $font-size-1 - .2;
+                    }
+                }
+
+                li:first-child {
+                    padding-left: 0;
+                }
+            }
+        }
+
+        .logo-footer {
+            margin: $margin-1;
+        }
+    }
+}

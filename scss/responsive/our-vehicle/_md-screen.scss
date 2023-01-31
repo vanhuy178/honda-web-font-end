@@ -1,0 +1,86 @@
+@media screen and(max-width: 991.98px) {
+    .our-vehicle {
+        #our-vehicle-slider {
+
+            .carousel-control-prev,
+            .carousel-control-next {
+                i {
+                    padding: $padding-3 - 5 $padding-2 - 9;
+                }
+            }
+        }
+
+        .carousel-inner {
+            // overflow: auto;
+            top: -4px;
+        }
+
+        .carousel-indicators--config {
+            margin-bottom: $margin-2 - 5;
+
+            li {
+                font-size: $font-size-1;
+
+
+            }
+
+            li.active {
+                &::before {
+                    // top: ;
+                }
+            }
+        }
+
+        .carousel-caption--config {
+            padding: 0;
+
+            & p:first-child {
+                font-size: $font-size-1 - .5;
+            }
+
+            li {
+                font-size: $font-size-1 - .3;
+            }
+
+            li.active {
+                &::before {
+                    top: 40px;
+                }
+            }
+
+            img {
+                width: 45%;
+            }
+
+            .caption-content {
+                font-size: $font-size-1 - .4;
+            }
+
+            .carousel-caption-detail {
+                margin-bottom: $padding-2 - 7;
+
+                h2 {
+                    font-size: $font-size-2 + .2;
+                }
+
+                p {
+                    font-size: $font-size-1 - .6;
+                }
+            }
+        }
+
+        .vehicle-function {
+            .row {
+                .function {
+                    .function-detail {
+                        top: 35%
+                    }
+                }
+
+                p {
+                    font-size: $font-size-1 - .1;
+                }
+            }
+        }
+    }
+}

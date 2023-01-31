@@ -1,0 +1,27 @@
+@media screen and (max-width: 767.98px) {
+
+    #swipper-slider {
+        margin-top: $margin-5 + 5;
+
+        .swiper {
+            height: 550px;
+
+            .swiper-wrapper {
+                height: 85%;
+            }
+
+            .swiper-btn {
+                bottom: 18%;
+            }
+
+            .swiper-pagination {
+                display: none;
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                padding: $padding-4 $padding-3;
+            }
+        }
+    }
+}

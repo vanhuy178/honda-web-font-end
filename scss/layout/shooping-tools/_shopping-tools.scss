@@ -1,0 +1,31 @@
+// xin phép responsive tại đây luôn nha hi
+@media screen and (min-width: 768px) {
+    .list-shopping-tools {
+        width: 250px;
+        position: fixed;
+        top: 65px;
+        left: 250px;
+        z-index: 99;
+        border-radius: none;
+
+        ul {
+
+            li {
+                padding: $padding-2 - 5 $padding-1;
+                font-size: $font-size-1 - .2;
+                color: $color-blue-100;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 776.98px) {
+    .list-shopping-tools {
+        ul {
+            li {
+                padding: $padding-1 - 5 $padding-1 - 2;
+            }
+        }
+    }
+}

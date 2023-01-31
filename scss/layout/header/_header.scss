@@ -1,0 +1,52 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+#navbar a.active {
+    background-color: $color-white ;
+    color: $color-blue-100 ;
+}
+
+.header__nav {
+    font-size: 1.4rem;
+    padding: 0;
+    background-color: $color-blue-100;
+
+    // padding toàn thẻ a trong header nav
+    a {
+        padding: $padding-2 $padding-3;
+        border-right: $border-color-1;
+        border-left: $border-color-1;
+        color: $color-white;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    // navbar left
+    a:first-child {
+        padding: 0 $padding-3;
+    }
+
+    // navbar right
+
+    .navbar-nav {
+        .nav-item {
+
+            .nav-link {
+                color: $color-white;
+                padding: $padding-2 ;
+            }
+        }
+
+    }
+}
+
+.no-border {
+    border: 0 !important;
+}

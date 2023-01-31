@@ -1,0 +1,13 @@
+@media screen and (max-width: 1300px) {
+    .search-area {
+        input {
+            width: 83%;
+        }
+    }
+
+    .vehicle__close {
+        p {
+            font-size: $font-size-1 - .1;
+        }
+    }
+}

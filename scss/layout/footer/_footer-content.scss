@@ -1,0 +1,119 @@
+.footer {
+    padding: $padding-3 $padding-7;
+    background-color: $color-grey;
+
+    .footer-content {
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .footer-detail {
+            h1 {
+                font-size: $font-size-2;
+                font-weight: $font-weight-bold;
+                color: $color-dark-blue-100;
+                margin-bottom: $margin-2;
+            }
+
+            li {
+                margin-bottom: $margin-2;
+
+                a {
+                    font-size: $font-size-1 - .1;
+                    text-decoration: none;
+                    color: $color-blue-200;
+                }
+            }
+        }
+
+    }
+
+    .footer-touch {
+        padding: $padding-3 0;
+        border-top: $border-color-2;
+        width: 100%;
+        margin-top: $margin-3;
+
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .touch-left {
+            h1 {
+                margin-bottom: $margin-2;
+                font-size: $font-size-2;
+                color: $color-blue-100
+            }
+
+            i {
+                @include socialIcons;
+                // ...code
+
+            }
+        }
+
+        .touch-right {
+            text-align: right;
+
+            p {
+                font-size: $font-size-1;
+                color: $color-dark-blue-200;
+            }
+
+            .btn-search {
+                margin-top: $margin-1;
+            }
+        }
+    }
+}
+
+.copyright {
+    background-color: $color-blue-100;
+    padding: $padding-4 $padding-7;
+    color: $color-grey;
+
+    .copyright-left {
+        p {
+            font-size: $font-size-1;
+
+            a {
+                color: $color-grey;
+                font-style: italic;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .copyright-right {
+        ul {
+
+            justify-content: flex-end;
+
+            li {
+                // margin-left: $margin-2;
+                padding: 0 $padding-2;
+                border-left: $border-color-2;
+
+                &:first-child {
+                    border: none;
+                }
+
+                a {
+                    font-size: $font-size-1;
+                    color: $color-grey;
+                    // border-right: $border-color-2;
+                }
+            }
+        }
+    }
+
+    .logo-footer {
+        margin: $margin-3;
+
+        img {
+            max-width: 50%;
+            height: 4rem;
+        }
+    }
+}

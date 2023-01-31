@@ -1,0 +1,28 @@
+@media screen and (max-width: 767.98px) {
+    .search-footer {
+        padding: 0 $padding-1;
+
+        #search-area {
+            padding: 0 3px;
+
+            #search-footer {
+                width: 75%;
+
+                input {
+                    width: 75%;
+                }
+            }
+
+            p {
+                color: $color-white;
+                font-size: $font-size-1 - .4;
+
+                i {}
+            }
+
+            .btn-search {
+                padding: 0 $padding-1;
+            }
+        }
+    }
+}

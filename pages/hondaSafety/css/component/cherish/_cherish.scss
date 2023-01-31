@@ -1,0 +1,25 @@
+.cherish__banner {
+    background-image: url('./../pages/hondaSafety/img/img-curiosity01_pc.jpg');
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+
+    h1 {
+        text-shadow: 0px 3px 50px rgb(4 29 66 / 64%);
+    }
+}
+
+.cherish__desc {
+    .cherish__desc-item {
+        line-height: 1.7;
+        font-size: $font-size-1 + .1;
+    }
+}
+
+.cherish__footer {
+    font-size: $font-size-1;
+
+    img {
+        margin: 0 auto;
+    }
+}

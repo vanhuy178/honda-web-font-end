@@ -1,0 +1,65 @@
+.intro {
+    margin-top: $margin-up-3 + 20;
+
+    .intro-content {
+        padding: 0 $padding-7;
+
+        .intro-left,
+        .intro-right {
+            height: 400px;
+            position: relative;
+            background-clip: content-box;
+        }
+
+        .intro-left {
+            background-image: url('../../../images/our-vehicle-intro-1.jpg');
+            background-size: cover;
+            background-position: center center;
+
+            .intro-left-content {
+                padding: 0 $padding-4;
+                color: $color-white;
+                text-align: center;
+                font-size: $font-size-1;
+                // Chỉnh sữa vị trí 
+                position: absolute;
+                bottom: 17%;
+
+                h4 {
+                    margin-bottom: $margin-1;
+                }
+
+                p {
+                    font-size: $font-size-1 - .2;
+                }
+            }
+        }
+
+        .intro-right {
+            background-image: url('../../../images/our-vehicles-intro-2.jpg');
+            background-size: cover;
+            background-position: center center;
+
+            .intro-right-content {
+                color: $color-white;
+                font-size: $font-size-1;
+
+                // -----------------
+                h4 {
+                    padding: 1px;
+                    width: 150px;
+                    background-color: $color-dark-blue-100;
+                }
+
+                // here
+
+
+                // ----------------
+                // chỉnh vị trí
+                position: absolute;
+                top: 30%;
+                left: 5%;
+            }
+        }
+    }
+}

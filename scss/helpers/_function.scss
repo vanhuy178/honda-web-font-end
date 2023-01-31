@@ -1,0 +1,70 @@
+@each $stt,
+$color in (1, #3c4c5c) (2, #e5e5e5) (3, #14409a) (4, #c0aab5) (5, #5c5c5c) (6, #33569c) {
+    #img-#{$stt} {
+        background: linear-gradient(#bbbdc0, $color-grey, $color-grey)
+    }
+
+    .vehicle-product:hover #img-#{$stt} {
+        background: linear-gradient($color-grey, #{$color}, $color-grey);
+    }
+
+    .delay-#{$stt} {
+        animation-delay: .1s * $stt;
+    }
+}
+
+@each $stt,
+$img in (1, banner-1) (2, banner-2) (3, banner-3) (4, banner-4) {
+    .slide-#{$stt} {
+        background: url('../../images/#{$img}.jpg');
+        background-size: cover;
+        background-position: center center;
+
+        // reponsive at md-screen
+        @media screen and (max-width: 767.9px) {
+            background: url('../../images/#{$img}-xs.jpg');
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+}
+
+@each $stt,
+$img in (1, item-1) (2, item-2) (3, item-3) (4, item-4) {
+    .function-#{$stt} {
+        background: url('../../images/#{$img}.jpg');
+        background-size: 120%;
+        background-position: center 0;
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 575.98px) {
+            background-size: 100%;
+        }
+    }
+}
+
+@each $stt,
+$img in (1, discover-1) (2, discover-2) (3, discover-3) (4, discover-4) (5, discover-5) {
+    .discover-item-#{$stt} {
+        background: url('../../images/#{$img}.jpg');
+        // background-size: 120%;
+        background-size: cover;
+        background-position: center center;
+        // background-position: center 0;
+        // background-repeat: no-repeat;
+
+        // @media screen and (max-width: 575.98px) {
+        //     background-size: 100%;
+        // }
+    }
+}
+
+// @each $stt,
+// $img in (1, shopping-tool-1),
+// (2, shopping-tool-2) (3, shopping-tool-3) (4, shopping-tool-4) (5, shopping-tool-5) (6, shopping-tool-6) (7, shopping-tool-7) (8, shopping-tool-8) (9, shopping-tool-9) (10, shopping-tool-10) {
+//     .shopping-image-#{$stt} {
+//         background-image: url('./../../images/#{$img}.jpg');
+//         background-size: cover;
+//         background-position: center center;
+//     }
+// }

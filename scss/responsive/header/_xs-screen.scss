@@ -1,0 +1,94 @@
+@media screen and (max-width: 575.98px) {
+
+    // header navbar
+    .header__nav {
+        a {
+            padding: $padding-1 $padding-1 + 2;
+            font-size: $font-size-1 - .4;
+        }
+
+        &>a:first-child {
+            padding: 0 $padding-1;
+        }
+
+        button {
+            margin-right: $margin-2;
+        }
+
+    }
+
+    .navbar-collapse {
+        border-top: $border-color-1 ;
+    }
+
+    // discover menu
+    .discover-menu {
+        &::before {
+            @include arrow(unset, 1%);
+            top: 2rem;
+        }
+    }
+
+
+    //search
+    #search-area {
+        background-color: $color-blue-100;
+        padding: $padding-1 $padding-2;
+
+        i {
+            color: $color-white;
+            font-size: 10px;
+            margin-top: 7px;
+        }
+
+        &::before {
+            display: none;
+        }
+
+        input {
+            font-size: 10px;
+            width: 66%;
+            height: 2rem;
+            margin-right: $margin-2;
+            color: $color-white;
+            border: 1px solid $color-white;
+            border-radius: 10px;
+            padding: $padding-1 ;
+            padding-left: $padding-1;
+            padding-right: $padding-4;
+
+            &::placeholder {
+                font-size: 10px;
+                color: $color-white;
+            }
+        }
+
+        .btn-search {
+
+            font-size: 8px;
+            padding: $padding-1 $padding-2;
+            @include buttonVehicle($color-white, transparent, $color-white, $color-white, $color-blue-100)
+        }
+    }
+
+
+    //vehicle-title
+    .vehicles {
+        .vehicles-content {
+            .vehicle__nav {
+                ul {
+                    li {
+                        margin-bottom: $margin-1;
+
+                        a {
+                            border: none;
+                            padding: $padding-1 ;
+                            font-size: $font-size-1 - .4;
+                            // text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

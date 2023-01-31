@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda safety</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="../../css/animate.css">
+    <link rel="stylesheet" href="../../css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="../../css/swiper.css"> -->
+    <link rel="stylesheet" href="../../css/main.css">
+</head>
+
+<body>
+
+
+    <!-- header -->
+    <!-- NAVBAR -->
+    <header class="header" id="header">
+        <nav class='header__nav navbar navbar-expand-lg navbar-dark' id="navbar">
+            <!-- <div class="header__nav__left"> -->
+            <a href="../../index.html" class="no-border">
+                <img src="../../images/logo.png" alt="Logo of my company">
+            </a>
+
+            <!-- responsive -->
+            <a href="" class="d-inline d-md-none text-center dealer-map" data-toggle="modal"
+                data-target="#exampleModal">
+                <i class="fa-solid fa-location-dot"></i>
+                <br>
+                Dealers
+            </a>
+            <!-- 
+            <a class="header-slide-show d-none d-md-block" id='tools-link' data-toggle="collapse"
+                href='#collapseShoppingTools'>
+                SHOPPING TOOLS
+                <i class="fa-solid fa-chevron-down"></i>
+            </a> -->
+
+            <!-- </div> -->
+
+            <button class="navbar-toggler ml-auto" data-toggle='collapse' data-target='#navbar-menu'
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id='navbar-menu'>
+
+                <!-- nabar ul -->
+                <ul class="navbar-nav ml-auto ">
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link no-border dealer-map" data-toggle="modal"
+                            data-target="#exampleModal">
+                            <i class="fa-solid fa-location-dot mr-2"></i>Dealers</a>
+                    </li>
+                    <!-- li owner -->
+                    <li class="nav-item">
+                        <a href="../../auth/login.html" class='no-border nav-link'>Login</a>
+                    </li>
+
+                    <li class="nav-item d-inline d-md-none">
+                        <a class="nav-link" id='nav-link' data-toggle="collapse" href='#collapseShoppingTools'>
+                            Shopping tools
+                        </a>
+                        <!-- dropdown menu-->
+                        <!-- <div class="d-inline d-md-none"> -->
+                        <!-- DROP DOWN MENU -->
+                        <div class="list-shopping-tools collapse" id="collapseShoppingTools">
+                            <ul class="list-unstyled render-ul-shopping-tools">
+                                <!-- ...code js here -->
+                            </ul>
+                        </div>
+                        <!-- DROP DOWN MENU -->
+                        <!-- </div> -->
+                    </li>
+                    <!--dropdown menu for discover -->
+                    <!-- hover for this discover with dropdown bs4 -->
+                    <li class="nav-item dropdown">
+                        <a href="#" class=' no-border nav-link' data-toggle='dropdown' id="discover">Discover</a>
+
+                        <div class="dropdown-menu discover-menu animate animated">
+                            <div class=" dropdown-menu-detail dropdown-item">
+                                <div class="dropdown-detail-left">
+                                    <h4>Technology</h4>
+                                    <ul class="">
+                                        <li class=""><a class=" " href="#">Honda Safety</a></li>
+                                        <li class=""><a class=" " href="#">Honda Sensing</a></li>
+                                        <li class=""><a class=" " href="#">How to Videos & Guides <br /> by Vehicle</a>
+                                        </li>
+                                        <li class=""><a class=" " href="#">Enviromental vehicles</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown-detail-right">
+                                    <h4>Community</h4>
+                                    <ul class="">
+                                        <li class=""><a class=" " href="#">Auto Shows</a></li>
+                                        <li class=""><a class=" " href="#">Serial Ones</a></li>
+                                        <li class=""><a class=" " href="#">News & Event</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu-socials dropdown-item">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-youtube"></i>
+                                <i class="fa-brands fa-tiktok"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-brands fa-google-plus-g"></i>
+                                <i class="fa-brands fa-instagram"></i>
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../about us/index.html" class='nav-link'>About us</a>
+                    </li>
+                    <!-- search -->
+                    <li class="nav-item d-none d-md-inline">
+                        <a href="#search-area" class="nav-link" data-toggle="collapse">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>
+
+
+                    <!-- search input -->
+                    <li class="nav-item search-area d-inline d-md-none" id='search-area'>
+                        <i class="fa fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search for anthing about Honda" />
+                        <button class=" btn-search">SEARCH</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- </div> -->
+        </nav>
+
+        <section class="search-area collapse" id='search-area'>
+            <i class="fa fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search for anthing about Honda" />
+            <button class=" btn-search">SEARCH</button>
+        </section>
+
+    </header>
+
+    <!-- banner -->
+    <section class="banner flex-align-center ">
+        <div class="banner__content text-white text-center container">
+            <h1>Safety</h1>
+            <p>We are promoting safety initiatives based on three factors: human capabilities,
+                mobility performance, and the transportation ecosystem.</p>
+        </div>
+    </section>
+
+    <!-- safety everyone -->
+    <div class="safety-everyone section flex-align-center">
+        <div class="safety-everyone__content text-center container">
+            <img src="./img/ttl-safety01.jpg" alt="ttl-safety" style="max-width: 410px;">
+            <h1 class="mt-3">Safety, the honda way</h1>
+            <p class="mt-5">Some people may think,“Doing nothing is the safest choice.”
+                But the safety Honda is pursuing is the “safety which enables people to spread their wings.”
+                In order to realize a collision-free society where everyone can follow their curiosity
+                and go anywhere freely with total peace of mind,
+                Honda is pursuing safety in view of three components of safety-
+                human ability, mobility performance, and the traffic ecosystem.</p>
+            <button class="btn-safety mt-5"><a href="">Message</a></button>
+        </div>
+    </div>
+
+    <!--  society-->
+    <section class="society section">
+        <div class="society__content flex-align-center">
+            <h1 class="header-title-society">
+                What Does a Collision-free Society
+                Mean to Honda?
+            </h1>
+        </div>
+        <div class="society-desc container ">
+            <h1 class="header-society text-center my-5">
+                A world where everyone can follow their curiosity and go anywhere freely with total peace of mind
+            </h1>
+
+            <div class="detail-desc">
+                <!-- code js here -->
+            </div>
+        </div>
+
+    </section>
+
+    <!-- cherish -->
+    <section class="cherish section ">
+        <div class="cherish__content ">
+            <div class="cherish__banner flex-align-center">
+                <h1 class="header-title-society container">
+                    Honda Wants to Cherish
+                    the Curiosity Within All of Us
+                </h1>
+            </div>
+            <div class="container">
+
+                <div class="cherish__desc container mt-5">
+                    <!-- code js here -->
+                </div>
+
+                <div class="cherish__footer text-center">
+                    <h1 class="text-left">
+                        Enhancing the joy that comes with freedom of mobility while pursuing zero collisions
+                    </h1>
+
+                    <img src=" ../../pages/hondaSafety/img/img-curiosity02.jpg" alt="" style="max-width:672px ;">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- collision -->
+    <section class="collision container section">
+        <!-- <div class="collision__container mt-5 d-flex justify-content-between">
+            <div class="collisions__image">
+                <img src="../../pages/hondaSafety/img/img-collision01.jpg" alt="" style="width: 550px;">
+            </div>
+            <div class="collisions__content ml-5">
+                <h2>fdfsdafasfdfdsfds</h2>
+                <p class="mt-4">
+                    asdfasfassssssssfasdfasdfsadddddddddddddddddfdsafasfasfsafasdfasdfasfasdfasfasfasgsdfdaslkfhlasndhefdevleipjhastiadsfhello
+                    ubxhaos ednojhn rat sdnlkdfakk asd fasdfsaf dddddddddddddddddddddddddddddddddd</p>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- Modal bs -->
+    <div class="modal fade w-80" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">My place</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <iframe class="w-100"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d228.0098045163881!2d106.50456329617303!3d10.416182357344661!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1svi!2s!4v1674392219943!5m2!1svi!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container-fluid footer-content">
+
+        </div>
+        <div class="footer-touch">
+            <div class="touch-left">
+                <h1>Stay in Touch</h1>
+                <!-- <div class="dropdown-menu-socials dropdown-item"> -->
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-tiktok"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-google-plus-g"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <!-- </div> -->
+            </div>
+
+            <div class="touch-right">
+                <p>Receive the lastest news and exclusive updates.</p>
+                <button class="btn btn-search">
+                    <i class="fa fa-envelope"></i>
+                    STAY INFORMED
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="copyright">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 copyright-left">
+                    <p>
+                        <!-- sử dụng kí tự phục thể -->
+                        &#169; 2017 <a href="https://automobiles.honda.com/">Honda Co., Inc.</a> All infomation
+                        contained herein
+                        applies to U.S vehicle only.
+                        Please
+                        see
+                        our <a href="#">Privacy Policy and Legal term and Conditions</a>. For non-U.S,-distributor
+                        information go to
+                        <a href="https://global.honda/">world.honda.com</a>
+                    </p>
+                </div>
+                <div class="col-md-7 copyright-right">
+                    <ul class="list-unstyled d-flex">
+                        <li><a href="#">Vehicle Data Privacy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12 d-flex justify-content-between renderLogo-safety logo-footer">
+                    <!-- ...code js  -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../assets/safety/constaint.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <!-- <script src="../../js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../../js/swiper.js"></script> -->
+    <script src="../../js/main.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

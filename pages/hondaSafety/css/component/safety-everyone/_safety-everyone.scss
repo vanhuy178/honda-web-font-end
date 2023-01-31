@@ -1,0 +1,54 @@
+.safety-everyone {
+    .safety-everyone__content {
+
+
+        h1 {
+            line-height: 1.7;
+            font-size: $font-size-3 + 1;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: $font-size-1 + .2;
+        }
+
+        .btn-safety {
+            background-color: white;
+            border: 1px solid #000;
+            outline: none;
+            line-height: 1.4;
+            text-align: center;
+            min-width: 280px;
+            padding: 1em 2em;
+            display: inline-block;
+            position: relative;
+            transition: color 0.3s ease, background 0.3s ease;
+        }
+
+        .btn-safety a {
+            font-size: $font-size-1 + .1;
+            text-decoration: none;
+            color: #000;
+            font-weight: $font-weight-300
+        }
+
+        .btn-safety a::before {
+            content: "";
+            display: inline-block;
+            border-color: inherit;
+            border-style: solid;
+            border-width: 0 1px 1px 0;
+            width: 8px;
+            height: 8px;
+            vertical-align: middle;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            position: absolute;
+            top: 0;
+            right: 15px;
+            bottom: 0;
+            margin: auto;
+            transition: border-color 0.3s ease;
+        }
+    }
+}

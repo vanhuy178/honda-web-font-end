@@ -1,0 +1,78 @@
+// Lưu biến ota2 dự án của chúng ta
+
+// -------------------COLOR---------------------------
+$color-white: #fff;
+$color-blue-200: #2198dc;
+$color-blue-100: #007cc3;
+$color-dark-blue-100: #00446b;
+$color-dark-blue-200: #00324f;
+$color-orange: #ff4040;
+$color-black: #000;
+$color-grey: #f6f6f6;
+$color-btn-swipper: rgba(255, 255, 255, .9);
+// -------------------FONT-SIZE---------------------------
+$font-size-html: 12px; // dùng rem cho toàn bộ web; 
+$font-size-1: 1.4rem;
+$font-size-2: 1.8rem;
+$font-size-3: 2.4rem;
+$font-size-4: 6rem;
+$font-weight-bold: bold;
+$font-weight-normal: normal;
+$font-weight-300: 300;
+// -------------------PADDING---------------------------
+$padding-1: 6px;
+$padding-2: 20px;
+$padding-3: 25px;
+$padding-4: 30px;
+$padding-5: 40px;
+$padding-6: 50px;
+$padding-7: 3%;
+
+// padding responsive
+$padding-8: 1%;
+$padding-9: 5%;
+$padding-10 : 10%;
+// -------------------MARGIN---------------------------
+$margin-up-1: -4px;
+$margin-up-2: -2.7rem;
+$margin-up-3: -200px;
+
+$margin-1: 5px;
+$margin-2: 20px;
+$margin-3: 30px;
+$margin-4: 20px;
+$margin-5: 60px;
+$margin-6: 100px;
+
+// -------------------BORDER---------------------------
+$border-color-1: 1px solid #4f91ca;
+$border-color-2: .2rem solid #e5e5e5;
+
+
+
+
+// -------------------SIZE---------------------------
+
+$size-line-height: 30px;
+//-------------------BOXSHADOWN---------------------------
+$box-shadow: 1px 20px 70px -10px rgba(59, 59, 59, 63);
+$box-shadow-2: 0 5px 10px 0 rgba(8, 29, 42, .08);
+//----------------------------SIZE FOR S20 ULTRA-----------------------------
+// padding
+$ultra-pd-1: 5px;
+$ultra-pd-2: 6px;
+$ultra-pd-3: 7px;
+$ultra-pd-4: 8px;
+$ultra-pd-5: 10px;
+
+//margin
+$ultra-mg-1: 5px;
+$ultra-mg-2: 6px;
+$ultra-mg-3: 7px;
+$ultra-mg-4: 8px;
+$ultra-mg-5: 10px;
+
+// font-size
+$ultra-fz-1: 8px;
+$ultra-fz-2: 10px;
+$ultra-fz-3: 12px;

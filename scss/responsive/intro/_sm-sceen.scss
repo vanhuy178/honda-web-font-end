@@ -1,0 +1,32 @@
+@media screen and (max-width: 767.98px) {
+    .intro {
+        margin-top: $margin-up-3 + 100;
+
+        .intro-content {
+
+            .intro-left,
+            .intro-right {
+                height: 340px;
+            }
+
+            .intro-left {
+                .intro-left-content {
+                    bottom: 13%;
+
+                    h4 {
+                        font-size: $font-size-1 + .2;
+                        margin-bottom: $margin-2;
+                    }
+
+                    p {
+                        font-size: $font-size-1 - .3;
+                    }
+                }
+            }
+
+            .intro-right {
+                background-image: url('../../../images/intro-2-xs.jpg');
+            }
+        }
+    }
+}

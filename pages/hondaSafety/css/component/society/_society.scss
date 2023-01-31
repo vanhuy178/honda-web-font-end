@@ -1,0 +1,27 @@
+.society__content {
+    background-image: url('../pages/hondaSafety/img/img-collisionfree01_pc.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 488px;
+
+    .society__content {
+        h1 {
+            text-shadow: 0px 3px 50px rgb(4 29 66 / 64%);
+        }
+    }
+
+}
+
+.society-desc {
+    .header-society {
+        font-size: $font-size-2 + 1;
+        line-height: 1.7;
+        font-weight: $font-weight-bold;
+    }
+
+    .detail-desc {
+        .detail-desc-item {
+            font-size: $font-size-1;
+        }
+    }
+}

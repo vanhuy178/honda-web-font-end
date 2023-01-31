@@ -1,0 +1,93 @@
+@media screen and (max-width: 575.98px) {
+    .footer {
+        background-color: $color-white;
+        padding: 0;
+
+        .footer-content {
+            flex-direction: row;
+
+            .footer-detail {
+                // ...code  
+                width: 100%;
+
+                h1 {
+                    // border-bottom: $border-color-2;
+                    background-color: $color-grey;
+                    padding: $padding-3 $padding-2;
+                    font-size: $font-size-1 - .2;
+                    margin-bottom: 0;
+                    border-top: $border-color-1;
+
+                    display: flex;
+                    justify-content: space-between;
+
+                    i {
+                        @include socialIcons;
+                        color: $color-blue-100;
+                        background-color: transparent;
+                    }
+                }
+
+                ul {
+                    padding-left: $padding-3;
+                }
+
+            }
+        }
+
+        .footer-touch {
+            // flex-wrap: word-wrap;
+
+            .touch-left,
+            .touch-right {
+                width: 100%;
+                text-align: left;
+                padding: $padding-2 $padding-3;
+            }
+
+
+        }
+    }
+
+    .copyright {
+        .copyright-left {
+            p {
+                font-size: $font-size-1 - .2;
+            }
+        }
+
+        .copyright-right {
+
+            ul {
+                justify-content: flex-start;
+
+                li {
+                    padding: 0 $padding-1;
+
+                    a {
+                        font-size: $font-size-1 - .4;
+                    }
+                }
+
+                li:first-child {
+                    padding-left: 0;
+                }
+
+
+            }
+        }
+
+        .logo-footer {
+            justify-content: center !important;
+
+            img {
+                display: none;
+            }
+
+            img:first-child {
+                display: block;
+            }
+        }
+
+    }
+}

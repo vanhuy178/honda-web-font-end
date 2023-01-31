@@ -1,0 +1,151 @@
+.our-vehicle {
+    position: relative;
+
+    // chỉnh sữa thư viện ở file normalize.scss, cũng có thể làm ở đây *.*
+    #our-vehicle-slider {
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            i {
+                position: absolute;
+                top: 45%;
+                background-color: $color-btn-swipper;
+                padding: $padding-3 $padding-2 - 4;
+                box-shadow: $box-shadow;
+                font-size: $font-size-2 + .2;
+                color: $color-black;
+            }
+        }
+
+        .carousel-control-next {
+            i {
+                right: .7rem;
+                border-top-left-radius: 7px;
+                border-bottom-left-radius: 7px;
+            }
+        }
+
+        .carousel-control-prev {
+            i {
+                left: .7rem;
+                border-top-right-radius: 7px;
+                border-bottom-right-radius: 7px;
+            }
+        }
+    }
+
+    // ^-^
+
+    // config thanh điều hướng của carousel
+    .carousel-indicators--config {
+        margin-bottom: $margin-2 - 10;
+
+        li {
+            position: relative;
+            padding: 0 $padding-2;
+            font-size: $font-size-2 - .2;
+            color: $color-dark-blue-200;
+            font-weight: $font-weight-bold;
+            cursor: pointer;
+
+            // căn giưa li before   
+            display: flex;
+            justify-content: center;
+        }
+
+        li.active {
+            background-color: $color-blue-100;
+            padding: $padding-1 $padding-1 + 4;
+            border-radius: 20px;
+            color: $color-white;
+
+            &::before {
+                content: '';
+                border-top: 20px solid white;
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                position: absolute;
+                top: 43px;
+                z-index: 10;
+            }
+        }
+    }
+
+    // caption of carousel
+    .carousel-caption--config {
+        text-align: start;
+        position: absolute;
+        width: 45%;
+        left: 5%;
+        top: 5%;
+        font-size: $font-size-1;
+
+        & p:first-child {
+            font-size: $font-size-1 - .2;
+
+            span {
+                font-weight: $font-weight-bold;
+            }
+        }
+
+        img {
+            width: 60%;
+            transform: translateX(($padding-1 + 2) *(-1));
+        }
+
+        // p caption
+        .caption-content {
+            font-weight: $font-weight-300;
+            margin-bottom: $margin-3;
+            padding-right: $padding-1;
+        }
+
+
+        // detail 
+        .carousel-caption-detail {
+            margin-bottom: $margin-2;
+
+            h2 {
+                font-size: $font-size-3 + 1;
+                font-weight: $font-weight-300;
+            }
+
+            p {
+                font-size: $font-size-1 - .4;
+            }
+
+            .carousel-detail-right {
+                margin-right: 20%;
+            }
+        }
+
+        .btn-carousel,
+        .btn-build {
+            font-size: $font-size-1;
+            padding: $padding-1 $padding-2;
+            margin-bottom: $margin-4;
+        }
+
+        // carousel footer
+        .carousel-caption-footer {
+            padding-top: $padding-2;
+            margin-top: $margin-4 - 10;
+            border-top: 2px solid $color-grey;
+
+            a {
+                font-size: $font-size-1 - .2;
+                color: $color-white;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            img {
+                width: 76%;
+            }
+        }
+    }
+
+
+}
