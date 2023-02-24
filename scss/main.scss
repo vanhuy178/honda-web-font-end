@@ -83,9 +83,8 @@
 @import './responsive/footer/sm-screen';
 @import './responsive/footer/xs-screen';
 
+// Loader
 @import './layout/loader/loader';
-
-
 
 
 // trang honda vehicle
@@ -95,9 +94,10 @@
 @import '../pages/hondaSafety/css/component/cherish/cherish';
 @import '../pages/hondaSafety/css/component/collision/colliion';
 
-// banner
+// BANNER
 @import '../pages/hondaSafety/css/component/banner/banner';
-// safety-everyone
+// SAFYTY FOR EVERYONE
 @import '../pages/hondaSafety/css/component/safety-everyone/safety-everyone.scss';
-// society
+// SOCIETY
 @import '../pages/hondaSafety/css/component/society/society';
+// RESPONSIVE HONDA VEHICLE

@@ -23,9 +23,7 @@
 </head>
 
 <body>
-  <!-- Login form -->
   <!--load animation when we load pages  -->
-
   <div class="loader-wrapper">
     <span class="loader"><span class="loader-inner"></span></span>
   </div>
@@ -34,18 +32,18 @@
   <header class="header" id="header">
     <nav class='header__nav navbar navbar-expand-lg navbar-dark' id="navbar">
       <!-- <div class="header__nav__left"> -->
-      <a href="./index.html" class="no-border">
+      <a href="./index.html" class="no-border header-slide-show-hove">
         <img src="./images/logo.png" alt="Logo of my company">
       </a>
 
 
-      <a href="#" id='vehicles-link' class="header-slide-show d-none d-md-inline">
+      <a href="#" id='vehicles-link' class="header-slide-show header-slide-show-hover d-none d-md-inline">
         VEHICLES
         <i class="fa-solid fa-chevron-down"></i>
       </a>
 
       <!-- responsive -->
-      <a href="#" id="vehicles-link" class="header-slide-show  d-inline d-md-none text-center">
+      <a href="#" id="vehicles-link" class="header-slide-show d-inline d-md-none text-center">
         <i class="fa-solid fa-car"> </i> <br>
         Vehicles
       </a>
@@ -57,7 +55,7 @@
         Dealers
       </a>
 
-      <a class="header-slide-show d-none d-md-block" id='tools-link' data-toggle="collapse"
+      <a class="header-slide-show header-slide-show-hover d-none d-md-block" id='tools-link' data-toggle="collapse"
         href='#collapseShoppingTools'>
         SHOPPING TOOLS
         <i class="fa-solid fa-chevron-down"></i>
@@ -82,15 +80,13 @@
           </li>
           <!-- li owner -->
           <li class="nav-item">
-            <a href="./auth/login.html" class='no-border nav-link'>Login</a>
+            <a href="./pages/hondaSafety/index.html" class='no-border nav-link'>Tin tức</a>
           </li>
 
           <li class="nav-item d-inline d-md-none">
             <a class="nav-link" id='nav-link' data-toggle="collapse" href='#collapseShoppingTools'>
               Shopping tools
             </a>
-            <!-- dropdown menu-->
-            <!-- <div class="d-inline d-md-none"> -->
             <!-- DROP DOWN MENU -->
             <div class="list-shopping-tools collapse" id="collapseShoppingTools">
               <ul class="list-unstyled render-ul-shopping-tools">
@@ -100,11 +96,9 @@
             <!-- DROP DOWN MENU -->
             <!-- </div> -->
           </li>
-          <!--dropdown menu for discover -->
-          <!-- hover for this discover with dropdown bs4 -->
-          <li class="nav-item dropdown">
-            <a href="#" class=' no-border nav-link' data-toggle='dropdown' id="discover">Discover</a>
 
+          <li class="nav-item dropdown header-slide-show-hover">
+            <a href="#" class=' no-border nav-link ' data-toggle='dropdown' id="discover">Discover</a>
             <div class="dropdown-menu discover-menu animate animated">
               <div class=" dropdown-menu-detail dropdown-item">
                 <div class="dropdown-detail-left">
@@ -136,11 +130,11 @@
               </div>
             </div>
           </li>
-          <li class="nav-item">
+          <li class="nav-item header-slide-show-hover">
             <a href="./pages/about us/index.html" class='nav-link'>About us</a>
           </li>
           <!-- search -->
-          <li class="nav-item d-none d-md-inline">
+          <li class="nav-item d-none d-md-inline ">
             <a href="#search-area" class="nav-link" data-toggle="collapse">
               <i class="fa-solid fa-magnifying-glass"></i>
             </a>
@@ -449,7 +443,7 @@
 
   </header>
 
-  <!-- carousel -->
+  <!-- CAROUSEL -->
   <section class='' id="swipper-slider">
     <!-- Slider main container -->
     <div class="swiper">
@@ -478,7 +472,7 @@
     </div>
   </section>
 
-  <!-- intro -->
+  <!-- INTRO -->
   <section class="section intro wow animated fadeInUp delay-1">
     <div class="intro-content container-fluid">
       <div class="row">
@@ -501,9 +495,8 @@
     </div>
   </section>
 
-  <!-- our vehicle -->
-  <section class="our-vehicle
-  ">
+  <!-- OUR CAROUSEL -->
+  <section class="our-vehicle">
     <h1 class="our-vehivle-title">
       Our Vehicles
     </h1>
@@ -886,7 +879,7 @@
     </div>
   </section>
 
-
+  <!-- SEARCH FOOTER -->
   <section class="search-footer">
     <p class="back-to-top d-block d-sm-none">
       <!-- <a href="./index.html"> -->
@@ -909,7 +902,7 @@
     </div>
   </section>
 
-  <!-- footer -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container-fluid footer-content">
 
@@ -938,6 +931,7 @@
     </div>
   </footer>
 
+  <!-- COPYRIGHT -->
   <footer class="copyright">
     <div class="container-fluid">
       <div class="row">
@@ -967,7 +961,7 @@
     </div>
   </footer>
 
-  <!-- Modal bs -->
+  <!-- MODAL SHOW MY PLACE -->
   <div class="modal fade w-80" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -991,9 +985,6 @@
     </div>
   </div>
 
-
-  <!-- dropdown shooping tools -->
-
   <!-- DROP DOWN MENU -->
   <div class="list-shopping-tools collapse" id="collapseShoppingTools">
     <ul class="list-unstyled render-ul-shopping-tools">
@@ -1001,7 +992,7 @@
     </ul>
   </div>
   <!-- DROP DOWN MENU -->
-  <!-- I want them to render here -->
+
   <script src="./assets/society/constaint.js"></script>
   <script src="./pages/auth/login/main.js"></script>
   <script src="./assets/footer/constant.js"></script>
@@ -1020,9 +1011,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="./js/jquery.mCustomScrollbar.concat.min.js"></script>
   <script src="./js/swiper.js"></script>
-  <script src="./js/main.js">
-    // document.documentElement.style.setProperty('--animate-duration', '2s');
-  </script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

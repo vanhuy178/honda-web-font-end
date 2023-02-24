@@ -13,7 +13,7 @@
 
 .header__nav {
     font-size: 1.4rem;
-    padding: 0;
+    padding: 15px 0;
     background-color: $color-blue-100;
 
     // padding toàn thẻ a trong header nav
@@ -22,6 +22,7 @@
         border-right: $border-color-1;
         border-left: $border-color-1;
         color: $color-white;
+
     }
 
     a:hover {

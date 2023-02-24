@@ -1,11 +1,11 @@
 $(window).on("load", function () {
 	$(".loader-wrapper").fadeOut("slow");
 	$('body, html').animate({ scrollTop: 0 }, 1000)
-
 });
-
 $(document).ready(function () {
+	// INITIAL ANIMATION 
 	new WOW().init();
+
 	let collapseClass;
 	let footerCollapseUlClass;
 	collapseClass = 'collapse'
@@ -14,7 +14,7 @@ $(document).ready(function () {
 		let widthWindow = $(window).width();
 		widthWindow >= 767.98 ? $(`.${footerCollapseUlClass}`).removeClass(collapse) : $(`.${footerCollapseUlClass}`).addClass(collapse)
 	}
-	//khi mới load trang củng collapse nha
+
 	$(document).ready(function () {
 		collapseFunction(collapseClass);
 	})
@@ -29,6 +29,7 @@ $(document).ready(function () {
 		})
 	}
 
+	// CHECK CONDITION WHEN WE CLICK ITEM NAV
 	let check = '';
 	let vehicleTitleClass = 'vehicle-title'
 	const vehicleTitle = $(`.${vehicleTitleClass}`);
@@ -37,17 +38,14 @@ $(document).ready(function () {
 			move('#cars')
 		};
 
-		// check điều kiện khi nhấn qua nút khác trong "vehilce nav"
 		if (check === '') {
 			$('.vehicle__nav ul li').removeClass(activeClass);
 		};
 
 		const title = $(this).html();
-		// console.log(title);
 		vehicleTitle.html(
 			`
 				<h3>
-					CARS
 					<i class="fa-solid fa-circle"></i>
 					<span>
 						${title === 'CARS' ? "SEDANS" : title}
@@ -172,7 +170,7 @@ $(document).ready(function () {
 		}
 	})
 	{
-		// nút close cho vehicle
+		// BUTTON CLOSE FOR VEHICLE SECTION
 		$(`.${vehicleCloseClass}`).click(function () {
 			$(`.${vehicleNavClass}`).addClass(fadeInDownAnimation);
 			$(`.${listVehiclesClass}`).addClass(fadeInDownAnimation);
@@ -188,7 +186,7 @@ $(document).ready(function () {
 	$(`.${vehicleProductClass}`).addClass(`animated ${fadeInDownAnimation}`);
 
 	{
-		// thêm hiệu ứng cho discover
+		// ADD ANIMATON FOR HOVER
 		$(`#${discoverId}`).click(function () {
 			$(`.${discoverMenuClass}`).addClass(fadeInDownAnimation);
 			setTimeout(() => {
@@ -198,7 +196,7 @@ $(document).ready(function () {
 		})
 	}
 
-	{	// active nav for our-vehicle
+	{	//ACTIVE NAV ITEM FOR OUR VEHICLE SECTION
 		let listOfCarouselIndicators = $(`.${carouselIndicatorsConfigClass} li`);
 		// console.log(listOfCarouselIndicators);
 		listOfCarouselIndicators.click(function () {
@@ -208,8 +206,7 @@ $(document).ready(function () {
 	}
 
 
-	// section carousel-sx-indicators
-	// ......code
+	// CAROUSEL
 	{
 		const ol = $(`.${carouselXsIndicatorsClass} ol`);
 		const i = $(`.${carouselXsHeaderClass} i`);
@@ -257,8 +254,9 @@ $(document).ready(function () {
 		});
 	}
 
-	// render discover honda vehicle
+	// RENDER DISCOVER HONDA 
 	{
+
 		let htmlConent = '';
 		// take realtime
 		const dayRealtime = new Date();
@@ -274,8 +272,6 @@ $(document).ready(function () {
 		console.log(renderTimeNow);
 
 
-
-		// -----------------------------------------------------------------
 		htmlConent = ARRAY_DISCOVER_HONDA.map(function (item, index) {
 			return (`
 					<!-- discover content -->
@@ -292,7 +288,7 @@ $(document).ready(function () {
 				`)
 		});
 
-		// discover item -6 with twtter
+		// DISCOVER ITEM 6
 		let interactive = '';
 		interactive = `
 			<div class="col-md-4 col-sm-6 col-12 discover-honda-content">
@@ -327,7 +323,7 @@ $(document).ready(function () {
 		$(`.${discoverHondaRenderClass}`).html(newContent);
 	}
 
-	// hiệu ứng trược lên top
+	//CREATE SCROLL ON TOP
 	{
 		const btnBack = $(`.${backToTopClass}`);
 		btnBack.click(function () {
@@ -346,7 +342,7 @@ $(document).ready(function () {
 	}
 
 
-	//Render footer
+	//RENDER FOOTER
 	{
 		const Vehicles = 'Vehicles';
 		const ShoppingTools = 'Shopping Tools';
@@ -447,7 +443,7 @@ $(document).ready(function () {
 		}
 	}
 
-	//render footer logo
+	//RENDER FOOTER LOGO
 	{
 		const renderLogo = $('.renderLogo');
 		let htmlContent = ''
@@ -461,8 +457,7 @@ $(document).ready(function () {
 	}
 
 
-	//work with list shopping tools
-	// render shopping tools class
+	// RENDER SHOPPING TOOLS
 	{
 		let htmlContentShoppingTools = '';
 		htmlContentShoppingTools = LIST_SHOPPING_TOOLS.map((item, index) => {
@@ -476,7 +471,6 @@ $(document).ready(function () {
 
 		htmlContentShoppingTools ? $(`.${renderShoppingToolsClass}`).html(htmlContentShoppingTools) : $(`.${renderShoppingToolsClass}`).html('');
 
-		// let shoppingToolItem = 'list-shopping-tools ul li';
 		let htmlContentForCollapseListItem = '';
 		htmlContentForCollapseListItem = LIST_SHOPPING_TOOLS_DESC.map((item, index) => {
 			return (

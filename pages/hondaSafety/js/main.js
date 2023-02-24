@@ -43,7 +43,7 @@
     $('.collision').html(htmlContent);
 }
 
-// render logo safety
+// RENDER LOGO
 
 {
     const renderLogo = $('.renderLogo-safety');

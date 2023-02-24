@@ -7,3 +7,61 @@
     text-align: center;
     width: 100%;
 }
+
+@media screen and (max-width: 991.98px) {
+    .banner {
+        margin-top: 45px;
+    }
+
+    .collision .collision__container {
+        flex-direction: column;
+        align-items: center;
+
+        .collisions__content {
+            margin-top: $padding-10;
+            margin-left: 0 !important;
+        }
+    }
+
+    .cherish__footer img {
+        max-width: 400px !important;
+    }
+}
+
+@media screen and (max-width: 575.98px) {
+    .collision .collision__container .collisions__content {
+        padding: 0 20px;
+
+
+    }
+}
+
+@media screen and (max-width: 375.98px) {
+    .banner .banner__content p {
+        font-size: 1.4rem !important;
+    }
+
+    .collisions__image {
+        img {
+            width: 350px !important;
+        }
+    }
+
+    .cherish__footer img {
+        max-width: 250px !important;
+    }
+
+    .safety-everyone {
+        img {
+            max-width: 350px !important;
+        }
+    }
+
+    .header-title-society {
+        font-size: 30px;
+    }
+
+    .society-desc .header-society {
+        font-size: 2rem !important;
+    }
+}
