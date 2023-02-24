@@ -1647,7 +1647,7 @@ html {
 }
 @media screen and (max-width: 767.98px) {
   #swipper-slider {
-    margin-top: 65px;
+    margin-top: 100px;
   }
   #swipper-slider .swiper {
     height: 550px;
@@ -1668,7 +1668,7 @@ html {
 }
 @media screen and (max-width: 575.98px) {
   #swipper-slider {
-    margin-top: 60px;
+    margin-top: 80px;
   }
   #swipper-slider .swiper .swiper-button-prev,
   #swipper-slider .swiper .swiper-button-next {
