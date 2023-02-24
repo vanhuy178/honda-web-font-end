@@ -1894,7 +1894,7 @@ html {
     font-size: 0.9rem;
   }
   .our-vehicle .carousel-caption--config {
-    bottom: 15px;
+    bottom: 85px;
   }
   .our-vehicle .carousel-inner {
     top: 66px;
@@ -1985,6 +1985,9 @@ html {
   }
   .our-vehicle .carousel-caption--config .carousel-caption-footer a {
     font-size: 0.7rem;
+  }
+  .our-vehicle .discover-honda .discover-item .discover-item-content {
+    bottom: 15px;
   }
 }
 @media screen and (max-width: 1199.98px) {
