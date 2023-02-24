@@ -1,6 +1,9 @@
 # Build and deploy Honda website
 Link demo: https://main--sensational-dusk-6ca83f.netlify.app/
 
+## Home page
+![](images/honda-web.png)
+
 ## The target of this project
 1. review knowledge of bootstrap, jquery, scss, html5, css3
 2. Responsive website for all breakpoint at screen
